@@ -35,3 +35,5 @@ Route::apiResource('categories', CategoryController::class);
 Route::apiResource('customers', CustomerController::class);
 Route::apiResource('suppliers', SupplierController::class);
 Route::apiResource('products', ProductController::class);
+
+Route::post('/stock/update/{id}', [ProductController::class, 'StockUpdate']);
